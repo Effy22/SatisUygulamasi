@@ -162,3 +162,18 @@ let OrtaAlan = ()=> {
         else
             return null;
     }
+
+# GİTHUB SIFIRDAN PUSHLAMAK;
+
+1. git init
+2. git remote add origin <GitHub_depo_URL>
+3.  git add .
+    git commit -m "Initial commit"
+    git push -u origin master
+
+# GİTHUB PUSHLADIKTAN SONRA UPDATE ETME;
+Sol alt köşedeki Git simgesine tıklayın veya klavyede Ctrl + Shift + G tuşlarına basın.
+Yapmak istediğiniz işlemi seçin (örneğin, "Changes" sekmesinde değişiklikleri gözden geçirin ve ardından "..." simgesine tıklayarak "Push" seçeneğini seçin).
+Bu adımları izleyerek, Visual Studio Code üzerinden kolayca Git işlemlerini yapabilirsiniz. Diğer kod düzenleyicileri veya IDE'lerde de benzer entegrasyonlar bulunabilir, bu yüzden kullandığınız aracı kontrol edin ve belgelere göz atın.
+
+Sepet slice yazcaz. Eklendikçe ordaki sayı değişsin eklenen ürünleri bi yerde tutmamız gerekiyor.

@@ -17,9 +17,7 @@ function UrunListele(){
             urunListesi.map((urun,index)=>{
                 return(
                     <UrunKarti key={index} urun={urun} /> //Ürün propsu verdik.
-                
                 )
-                
             })
         }
       

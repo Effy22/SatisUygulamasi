@@ -1,12 +1,11 @@
-//fetch işlemleri, slice burda takibi yapılacak
+//fetch işlemleri, slice burda takibi yapılacak, sepet sayısı burada limitlernir
 import urunUrl from "../../config/UrunController"; 
 import {createAsyncThunk, createSlice} from '@reduxjs/toolkit'
 import menuSlice from "./menuSlice";
 const initUrunState={
     urunList: [],
     isLoadingAdd: false,
-    isLoadingListele: false,
-    sepetSayisi: 0
+    isLoadingListele: false
 }
 //end pointimiz: ürün/urunEkleme!
 export const fetchUrunEkleme =createAsyncThunk(
@@ -52,9 +51,7 @@ const urunSlice = createSlice({
     name: 'urun',
     initialState: initUrunState,
     reducers: {
-        setSepetSayisi(state, action){
-            state.sepetSayisi = action.payload;
-        }
+    
     },
     extraReducers: (build)=>{
 
@@ -79,6 +76,6 @@ const urunSlice = createSlice({
     }
 });
 
-export const {setSepetSayisi} =urunSlice.actions;
+
 export default urunSlice.reducer;
 
